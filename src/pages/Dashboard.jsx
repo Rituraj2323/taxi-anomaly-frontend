@@ -8,7 +8,7 @@ import TopKAnomalies from '../components/TopKAnomalies';
 import FilterPanel from '../components/FilterPanel';
 import { useAuth } from '../App';
 
-const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
+const API = 'https://taxi-anomaly-backend-2.onrender.com/api';
 const EMPTY_FILTERS = { dateFrom: '', dateTo: '', minFare: '', maxFare: '', zone: 'all' };
 
 export default function Dashboard() {

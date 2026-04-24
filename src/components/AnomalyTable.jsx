@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
 
-const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
+const API = 'https://taxi-anomaly-backend-2.onrender.com/api';
 
 function ScoreBar({ score }) {
   // score is 0-100%
