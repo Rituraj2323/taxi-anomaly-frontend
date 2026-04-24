@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const API = 'http://127.0.0.1:8000/api';
+const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
 
 function RankBadge({ rank }) {
   const colors = ['#f59e0b', '#94a3b8', '#b45309'];
