@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {
   LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer, Area, AreaChart
 } from 'recharts';
-
-const API = 'https://taxi-anomaly-backend-2.onrender.com/api';
+import { API } from '../config';
 
 const CustomTooltip = ({ active, payload, label }) => {
   if (!active || !payload?.length) return null;

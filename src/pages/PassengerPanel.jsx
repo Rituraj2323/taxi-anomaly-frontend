@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
-const API = 'https://taxi-anomaly-backend-2.onrender.com/api';
+import { API } from '../config';
 
 function ScoreMeter({ score, isAnomaly }) {
   const color = isAnomaly ? 'var(--accent-rose)' : score > 50 ? 'var(--accent-amber)' : 'var(--accent-emerald)';

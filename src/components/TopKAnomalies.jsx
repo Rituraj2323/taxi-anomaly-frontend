@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
-const API = 'https://taxi-anomaly-backend-2.onrender.com/api';
+import { API } from '../config';
 
 function RankBadge({ rank }) {
   const colors = ['#f59e0b', '#94a3b8', '#b45309'];

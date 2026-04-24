@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-
-const API = 'https://taxi-anomaly-backend-2.onrender.com/api';
+import { API } from '../config';
 const COLORS = ['#10b981', '#f43f5e'];
 
 const CustomTooltip = ({ active, payload }) => {

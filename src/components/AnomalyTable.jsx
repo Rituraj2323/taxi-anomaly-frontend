@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react';
-
-const API = 'https://taxi-anomaly-backend-2.onrender.com/api';
+import { API } from '../config';
 
 function ScoreBar({ score }) {
   // score is 0-100%

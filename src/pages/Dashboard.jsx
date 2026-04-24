@@ -7,8 +7,7 @@ import AnomalyTable from '../components/AnomalyTable';
 import TopKAnomalies from '../components/TopKAnomalies';
 import FilterPanel from '../components/FilterPanel';
 import { useAuth } from '../App';
-
-const API = 'https://taxi-anomaly-backend-2.onrender.com/api';
+import { API } from '../config';
 const EMPTY_FILTERS = { dateFrom: '', dateTo: '', minFare: '', maxFare: '', zone: 'all' };
 
 export default function Dashboard() {
