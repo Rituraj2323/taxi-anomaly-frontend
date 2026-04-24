@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const API = 'http://127.0.0.1:8000/api';
+const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000/api';
 
 function ScoreMeter({ score, isAnomaly }) {
   const color = isAnomaly ? 'var(--accent-rose)' : score > 50 ? 'var(--accent-amber)' : 'var(--accent-emerald)';
